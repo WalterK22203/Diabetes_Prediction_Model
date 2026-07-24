@@ -28,7 +28,6 @@ Diabetes_Prediction_Model/
     requirements.txt
     README.md
     .gitignore
-    REPLICATE_PROJECT_INSTRUCTIONS.txt
 ```
 
 ## Setup
@@ -57,12 +56,12 @@ Open `Final_Project.ipynb` in VS Code or Jupyter and run all cells.
 4. Review descriptive statistics.
 5. Visualize feature correlations with a heatmap.
 6. Split features and target values.
-7. Train and evaluate a Random Forest classifier.
-8. Review Random Forest feature importance.
-9. Create a cleaned feature set by dropping selected columns.
-10. Train a Random Forest model on the cleaned data.
-11. Train a Logistic Regression model on scaled cleaned data.
-12. Compare model accuracy, precision, recall, and F1 score.
+7. Clean clinically impossible zero values in selected medical measurements.
+8. Remove the row identifier from model features.
+9. Use reproducible scikit-learn preprocessing pipelines.
+10. Train and evaluate Random Forest and Logistic Regression classifiers.
+11. Compare accuracy, precision, recall, F1 score, and ROC-AUC.
+12. Tune the Random Forest model and interpret feature importance.
 
 ## Expected Outputs
 
@@ -73,10 +72,15 @@ The notebook should display:
 - Class distribution
 - Descriptive statistics
 - Correlation heatmap
-- Random Forest metrics and feature importance
-- Cleaned Random Forest metrics
-- Logistic Regression metrics
+- Cross-validation results
+- Random Forest, tuned Random Forest, and Logistic Regression metrics
+- Confusion matrix, ROC curve, and precision-recall curve
+- Permutation feature importance
 - Model comparison table and chart
+
+## Model Limitations
+
+This project is an educational machine learning workflow. It is not a medical diagnosis tool and should not be used to make clinical decisions. The dataset is limited in size and scope, and model performance should be validated on additional representative data before any real-world use.
 
 ## Security And Privacy
 
