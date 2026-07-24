@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+.ipython/
+.jupyter/
+.jupyter_runtime/
+.env
+kaggle.json
+REPLICATE_PROJECT_INSTRUCTIONS.txt
+*.pyc
+*.pyo
+*.pyd
