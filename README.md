@@ -63,6 +63,16 @@ Open `Final_Project.ipynb` in VS Code or Jupyter and run all cells.
 11. Compare accuracy, precision, recall, F1 score, and ROC-AUC.
 12. Tune the Random Forest model and interpret feature importance.
 
+## Key Improvements
+
+- Removed `Id` from model training because it is a row identifier.
+- Treated clinically impossible zero measurements as missing values.
+- Moved imputation and scaling into scikit-learn pipelines.
+- Added stratified cross-validation for more stable model evaluation.
+- Added ROC-AUC, ROC curves, precision-recall curves, and confusion matrix heatmaps.
+- Tuned the Random Forest model with `GridSearchCV`.
+- Added permutation feature importance for model interpretation.
+
 ## Expected Outputs
 
 The notebook should display:
